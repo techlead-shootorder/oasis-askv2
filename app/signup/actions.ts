@@ -73,7 +73,7 @@ export async function signup(
     const hashedPassword = getStringFromBuffer(hashedPasswordBuffer)
 
     try {
-      const result = await createUser(email, hashedPassword, salt)
+      const result = await createUser(name, email, hashedPassword, salt)
 
       if (result.resultCode === ResultCode.UserCreated) {
         await signIn('credentials', {
