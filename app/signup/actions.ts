@@ -8,6 +8,7 @@ import { getUser } from '../login/actions'
 import { AuthError } from 'next-auth'
 
 export async function createUser(
+  name: string,
   email: string,
   hashedPassword: string,
   salt: string
@@ -22,6 +23,7 @@ export async function createUser(
   } else {
     const user = {
       id: crypto.randomUUID(),
+      name,
       email,
       password: hashedPassword,
       salt
@@ -45,6 +47,7 @@ export async function signup(
   _prevState: Result | undefined,
   formData: FormData
 ): Promise<Result | undefined> {
+  const name = formData.get('name') as string
   const email = formData.get('email') as string
   const password = formData.get('password') as string
 
@@ -74,6 +77,7 @@ export async function signup(
 
       if (result.resultCode === ResultCode.UserCreated) {
         await signIn('credentials', {
+          name,
           email,
           password,
           redirect: false
