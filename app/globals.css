@@ -74,3 +74,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+.title{
+  font-size: 54px;
+  background-clip: text;
+  background: linear-gradient(to right, #4285f4, #d96570);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 64px;
+}
+
+
+  .subtitle {
+    font-size: 2.6rem;
+    color: #A0A0A0;
+  }
+
+  .suggestion {
+    cursor: pointer;
+    padding: 1.25rem;
+    width: 222px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 0.75rem;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    transition: 0.2s ease;
+  }
