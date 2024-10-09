@@ -10,9 +10,9 @@ export function EmptyScreen() {
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 p-8">
         <h1 className="text-lg font-semibold title">
-          Welcome to Oasis AI Chatbot!
+          Welcome to AskOasis!
         </h1>
-        <p className="subtitle"> How ow can I assist you today?</p>
+        <p className="subtitle"> How can I assist you today?</p>
         {/* <p className="leading-normal text-muted-foreground">
           This is an open source AI chatbot app template built with{' '}
           <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}

@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'What could be causing our infertility?',
+      subheading: '',
+      message: `What could be causing our infertility?`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'What tests or evaluations should we undergo?',
+      subheading: '',
+      message: 'What tests or evaluations should we undergo?'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'What treatment options are available for us?',
+      subheading: '',
+      message: `What treatment options are available for us?`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'How long should we try to conceive before seeking medical help?',
+      subheading: ``,
+      message: `How long should we try to conceive before seeking medical help?`
     }
   ]
 
